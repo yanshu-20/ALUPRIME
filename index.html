@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aluprime Facade and Windows | Premium Windows & Façade</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Syne:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">Aluprime Facade and Windows.</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products & Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li> <!-- Added based on user request -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Aluprime<br>Facade &<br>Windows</h1>
+            <p class="hero-subtitle">Exceptional uPVC Systems<br>&amp; Façade Solutions</p>
+            <div class="hero-rating">
+                <span class="stars">★★★★★</span> (4.9)
+            </div>
+        </div>
+
+        <!-- Quick Quote Form visible on desktop hero often, or linked -->
+        <div class="hero-quote-card">
+            <h3>Get a Quote</h3>
+            <form id="hero-quote-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="61461426-205b-4770-8b1c-ba0d86142cfc">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name *</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- About Us Section -->
+
+
+    <!-- Products Section -->
+    <section id="products" class="products section-dark">
+        <div class="container">
+            <h2 class="section-title text-light">Products & Services</h2>
+            <h3 class="text-light mb-4">Our Collection</h3>
+            <div class="products-grid mb-5">
+                <div class="product-item">
+                    <div class="product-img-wrap">
+                        <img src="./images/window-product.png" alt="Windows">
+                    </div>
+                    <h3>Windows</h3>
+                    <p>Casement, Sliding, Tilt & Turn</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-wrap">
+                        <img src="./images/door-product.png" alt="Doors">
+                    </div>
+                    <h3>Doors</h3>
+                    <p>Bi-fold, Patio, French Doors</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-wrap">
+                        <img src="./images/facade.png" alt="Façades">
+                    </div>
+                    <h3>Façades</h3>
+                    <p>Curtain Walls, Cladding</p>
+                </div>
+            </div>
+
+            <div class="services-container-premium">
+                <h3 class="text-light mb-5 text-center">Our Premium Services</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🪟</div>
+                        <h4>Aluminium Windows & Doors</h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h4>Curtain Wall Solutions</h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏗️</div>
+                        <h4>Façade Systems</h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h4>ACP & Cladding</h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🪜</div>
+                        <h4>Glass Railings</h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">☀️</div>
+                        <h4>Sunshades & Louvers</h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h4>Retrofit & Maintenance</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Button removed as per request -->
+        </div>
+    </section>
+
+    <!-- Why Us Section (01, 02 style) -->
+    <section id="why-us" class="why-us bg-beige">
+        <div class="container">
+            <!-- Item 01 -->
+            <div class="why-item">
+                <div class="why-text">
+                    <span class="why-number">01</span>
+                    <h3>Holistic Design Philosophy</h3>
+                    <p>We don't just sell windows; we curate views. Our designs integrate seamlessly with modern
+                        architecture, enhancing both aesthetics and energy efficiency.</p>
+                </div>
+                <div class="why-image">
+                    <img src="./images/design-detail.png" alt="Design Philosophy" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Item 02 (formerly 03) -->
+            <div class="why-item reverse">
+                <div class="why-text">
+                    <span class="why-number">02</span>
+                    <h3>Engineering-Focused Approach</h3>
+                    <p>Our design-driven and engineering-focused approach ensures every facade is structurally sound and
+                        aesthetically pleasing.</p>
+                </div>
+                <div class="why-image">
+                    <img src="./images/why-engineering.png" alt="Engineering Approach" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Item 03 (formerly 04) -->
+            <div class="why-item">
+                <div class="why-text">
+                    <span class="why-number">03</span>
+                    <h3>Premium Materials</h3>
+                    <p>We use only high-quality aluminium, glass, and accessories to guarantee longevity and
+                        performance.</p>
+                </div>
+                <div class="why-image">
+                    <img src="./images/why-materials.png" alt="Premium Materials" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Item 04 (formerly 07) -->
+            <div class="why-item reverse">
+                <div class="why-text">
+                    <span class="why-number">04</span>
+                    <h3>Timely Delivery</h3>
+                    <p>We pride ourselves on timely project delivery and a client-focused service experience that
+                        exceeds expectations.</p>
+                </div>
+                <div class="why-image">
+                    <img src="./images/why-delivery.png" alt="Timely Delivery" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="reviews section-darker">
+        <div class="container">
+            <h2 class="section-title-serif text-light">What Our Clients Say</h2>
+
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- Item 1 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Aluprime Facade and Windows transformed our home! The noise reduction is
+                            incredible, and the
+                            finish is just premium.”</blockquote>
+                        <cite>Guljar Yadav</cite>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Fantastic service from start to finish. The installation was quick, clean, and the
+                            windows look
+                            absolutely stunning.”</blockquote>
+                        <cite>Rajeev</cite>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Professional team and top-notch quality. Highly recommended for modern designs.”
+                        </blockquote>
+                        <cite>Durgesh</cite>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="review-card-simple">
+                        <blockquote>“The thermal insulation is amazing. Our electricity bills have dropped, and the
+                            house stays cool.”</blockquote>
+                        <cite>Vikram Singh</cite>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Our office facade looks world-class thanks to Aluprime. Timely delivery and perfect
+                            execution.”</blockquote>
+                        <cite>Aisha Khan</cite>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Best investment for our new villa. The sliding doors are so smooth and elegant.”
+                        </blockquote>
+                        <cite>Sneha Reddy</cite>
+                    </div>
+
+                    <!-- Duplicated for scrolling effect -->
+                    <!-- Item 1 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Aluprime Facade and Windows transformed our home! The noise reduction is
+                            incredible, and the
+                            finish is just premium.”</blockquote>
+                        <cite>Guljar Yadav</cite>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Fantastic service from start to finish. The installation was quick, clean, and the
+                            windows look
+                            absolutely stunning.”</blockquote>
+                        <cite>Rajeev</cite>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Professional team and top-notch quality. Highly recommended for modern designs.”
+                        </blockquote>
+                        <cite>Durgesh</cite>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="review-card-simple">
+                        <blockquote>“The thermal insulation is amazing. Our electricity bills have dropped, and the
+                            house stays cool.”</blockquote>
+                        <cite>Vikram Singh</cite>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Our office facade looks world-class thanks to Aluprime. Timely delivery and perfect
+                            execution.”</blockquote>
+                        <cite>Aisha Khan</cite>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="review-card-simple">
+                        <blockquote>“Best investment for our new villa. The sliding doors are so smooth and elegant.”
+                        </blockquote>
+                        <cite>Sneha Reddy</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section-revamp">
+        <!-- Top Container: Intro + Collage -->
+        <div class="container about-top-wrapper">
+            <div class="about-text-col">
+                <h2 class="about-main-heading">About Aluprime<br>Facade & Windows</h2>
+                <p class="about-lead">
+                    Aluprime Facade and Windows is a forward-looking façade and fenestration solutions company,
+                    specializing in high-performance aluminium systems for modern architecture. We combine engineering
+                    precision, premium materials, and skilled workmanship.
+                </p>
+                <a href="#hero-quote-form" class="btn-theme-yellow">Get a Quote</a>
+            </div>
+
+            <div class="about-collage-col">
+                <div class="collage-grid">
+                    <!-- Reusing existing images as placeholders for the collage -->
+                    <img src="./images/facade.png" class="collage-img img-main" alt="Facade">
+                    <img src="./images/why-engineering.png" class="collage-img img-sub-1" alt="Engineering">
+                    <img src="./images/design-detail.png" class="collage-img img-sub-2" alt="Detail">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Container: Feature Image + Mission/Vision -->
+        <div class="about-bottom-wrapper">
+            <div class="container about-bottom-grid">
+                <div class="about-feature-img-col">
+                    <img src="./images/why-materials.png" alt="Team Meeting" class="feature-img-rounded">
+                </div>
+                <div class="about-mission-col">
+                    <div class="mission-item">
+                        <h3 class="serif-title">Our Mission</h3>
+                        <p>To provide customized façade and window solutions that meet international quality standards,
+                            ensure safety, and add value to every project through technical excellence.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3 class="serif-title">Our Vision</h3>
+                        <p>To become a trusted name in façade and window solutions by delivering innovative, reliable,
+                            and sustainable systems that enhance architectural identity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" style="text-align: center; margin-bottom: 3rem;">Meet the Team
+            </h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="./images/sandeep.jpeg" alt="Mr. Sandeep Yadav">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-header">
+                            <div>
+                                <h3 class="team-name">Mr. Sandeep Yadav</h3>
+                                <span class="team-role">Operations</span>
+                            </div>
+                        </div>
+                        <p class="team-desc">
+                            Brings hands-on experience in façade execution, site coordination, and project delivery. His
+                            focus on quality workmanship, planning, and on-site problem-solving ensures smooth execution
+                            of residential and commercial façade projects.
+                        </p>
+                        <div class="team-footer">
+                            <span class="team-badge">Execution</span>
+                            <span class="team-badge">Planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="./images/mukesh.jpeg" alt="Mr. Mukesh Kumar Yadav">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-header">
+                            <div>
+                                <h3 class="team-name">Mr. Mukesh Kumar Yadav</h3>
+                                <span class="team-role">Business Development</span>
+                            </div>
+                        </div>
+                        <p class="team-desc">
+                            Actively involved in business operations, client coordination, and project oversight. With a
+                            practical understanding of aluminium systems and construction processes, he plays a key role
+                            in maintaining quality standards and client satisfaction.
+                        </p>
+                        <div class="team-footer">
+                            <span class="team-badge">Operations</span>
+                            <span class="team-badge">Client Relations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / About / Footer Combined -->
+    <section id="contact" class="footer-contact section-brown">
+        <div class="container footer-grid">
+
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <p><strong>Address</strong><br>
+                        Plot No. 46, Khasra No. 1179,<br>
+                        Aurangabad Jagir, Near Sarojini Nagar,<br>
+                        Lucknow Cantt Township,<br>
+                        Lucknow - 226002, Uttar Pradesh</p>
+
+                    <div class="map-container" style="margin-top: 20px; border-radius: 8px; overflow: hidden;">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Plot%20No%2046%20Khasra%20No%201179%20Aurangabad%20Jagir%20Lucknow%20226002&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products & Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p><strong>Contact</strong><br>
+                        +91 8425932020, +91 9711417996<br>
+                        <a href="mailto:aluprimefacadeandwindows@gmail.com">aluprimefacadeandwindows@gmail.com</a>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <h1>Aluprime Facade & Windows</h1>
+                <p>&copy; 2035 by Aluprime Facade and Windows. Powered and secured. 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js" defer></script>
+</body>
+
+</html>
