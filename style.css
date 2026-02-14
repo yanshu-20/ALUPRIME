@@ -743,114 +743,10 @@ img {
   line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .hero-title {
-    font-size: 4rem;
-  }
-
-  .intro-grid,
-  .why-item,
-  .footer-links-grid,
-  .products-grid {
-    grid-template-columns: 1fr;
-    flex-direction: column;
-  }
-
-  .why-item.reverse {
-    flex-direction: column;
-  }
-
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-    min-height: 100vh;
-    padding-bottom: 50px;
-  }
-
-  .hero-quote-card {
-    width: 100%;
-    margin: 40px auto 0;
-  }
-
-  .review-card {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .review-image {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .footer-cta {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .footer-cta h2 {
-    font-size: 3rem;
-  }
-
-  .main-nav {
-    display: none;
-    /* Mobile menu logic to be added in JS */
-  }
-
-  .mobile-toggle {
-    display: block;
-  }
-
-  .about-detailed-stack {
-    gap: 40px;
-  }
-
-  /* About Revamp Mobile */
-  .about-top-wrapper,
-  .about-bottom-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .collage-grid {
-    height: 300px;
-    margin: 40px 0;
-  }
-
-  .img-main {
-    width: 50%;
-    height: 140px;
-  }
-
-  .img-sub-1 {
-    width: 40%;
-    height: 140px;
-  }
-
-  .img-sub-2 {
-    width: 40%;
-    height: 140px;
-  }
-
-  .about-mission-col {
-    text-align: left;
-  }
-}
-
 /* Meet the Team Section */
 .team-section {
   padding: 100px 0;
   background-color: #fff;
-  /* White background */
 }
 
 .team-grid {
@@ -884,9 +780,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ensure image covers the area */
   object-position: center 20%;
-  /* Focus slightly higher than center */
   transition: transform 0.5s ease;
 }
 
@@ -915,7 +809,6 @@ img {
 .team-role {
   font-size: 0.9rem;
   color: #F3C969;
-  /* Use the yellow theme color */
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -925,7 +818,6 @@ img {
 .team-desc {
   font-size: 1rem;
   color: #666;
-  /* Lighter text for description */
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -946,9 +838,211 @@ img {
   font-weight: 500;
 }
 
-/* Responsive adjust */
-@media (max-width: 768px) {
+/* Responsive */
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Navigation */
+  .mobile-toggle {
+    display: block;
+    z-index: 1100;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(62, 39, 35, 0.98);
+    padding: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    /* Override default flex from desktop if needed, but here we toggle active */
+  }
+
+  .main-nav.active {
+    transform: scaleY(1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 50px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto 30px;
+  }
+
+  .hero-rating {
+    justify-content: center;
+  }
+
+  .hero-quote-card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+  }
+
+  /* Generic Grid Stacking */
+  .intro-grid,
+  .footer-links-grid,
+  .products-grid,
+  .about-top-wrapper,
+  .about-bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Why Us Stacking */
+  .why-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .why-item.reverse {
+    flex-direction: column;
+  }
+
+  .why-image img {
+    height: 300px;
+  }
+
+  .why-number {
+    margin: 0 auto 10px;
+  }
+
+  /* Products & Services */
+  .products h2.section-title,
+  .section-title-serif {
+    font-size: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Reviews */
+  .review-card-simple {
+    width: 300px;
+    /* Slightly narrower on mobile */
+  }
+
+  /* About Revamp */
+  .about-top-wrapper {
+    text-align: center;
+  }
+
+  .about-main-heading {
+    font-size: 2.5rem;
+  }
+
+  .collage-grid {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .img-main {
+    width: 60%;
+    height: 180px;
+    right: 20%;
+  }
+
+  .img-sub-1 {
+    width: 40%;
+    height: 150px;
+  }
+
+  .img-sub-2 {
+    width: 40%;
+    height: 150px;
+  }
+
+  .about-bottom-grid {
+    text-align: left;
+  }
+
+  /* Team */
   .team-grid {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-cta h2 {
+    font-size: 3rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card-simple {
+    width: 280px;
+  }
+
+  .collage-grid {
+    display: none;
+    /* Simplify for very small screens */
   }
 }
